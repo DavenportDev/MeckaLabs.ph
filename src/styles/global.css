@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mlBlue: #00AEEF;
+  --color-mlPurple: #B85CF6;
+  --color-mlGreen: #109081;
+  --color-mlGray: #1E1E1E;
+  --color-mlText: #F8FAFC;
+}
+*{
+  font-family: 'Inter', sans-serif;
+}
+body {
+  background: #060918; /* dark base */
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 20%,
+    rgba(0, 174, 255, 0.25),
+    transparent 75%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("/assets/noise.svg");
+  background-size: 200px 200px;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 1;
+}
+.floating-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
+}

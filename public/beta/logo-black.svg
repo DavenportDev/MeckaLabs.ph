@@ -1,0 +1,11 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Core -->
+  <circle cx="50" cy="50" r="5" fill="#000000" />
+
+  <!-- Orbits -->
+  <ellipse cx="50" cy="50" rx="30" ry="15" stroke="#000000" stroke-width="2" fill="none" />
+  <ellipse cx="50" cy="50" rx="30" ry="15" stroke="#000000" stroke-width="2" fill="none" transform="rotate(60 50 50)" />
+  <ellipse cx="50" cy="50" rx="30" ry="15" stroke="#000000" stroke-width="2" fill="none" transform="rotate(-60 50 50)" />
+
+</svg>
